@@ -16,6 +16,7 @@ html {
   --main-bg-color: #fffffff;
   --secondary-bg-color: #f5f4fa;
   --bg-grey-color: #2f303a;
+  --border-color: #eeeeee;
 }
 body {
   margin: 0;
@@ -189,9 +190,6 @@ img {
 
 /* description section */
 
-.description-title {
-  visibility: hidden;
-}
 .description-second-title {
   font-weight: 700;
   font-size: 14px;
@@ -362,6 +360,8 @@ a.logo.link {
   color: var(--main-text-color);
 }
 .filter-btn {
+  display: flex;
+  justify-content: center;
   background-color: var(--button-bg-grey-color);
   border-width: 0px;
   cursor: pointer;
@@ -397,12 +397,24 @@ a.logo.link {
 
 .portfolio-filter-list {
   display: flex;
+  justify-content: center;
 }
 .portfolio-list-btn {
   display: flex;
+  justify-content: center;
+  margin-top: 0;
+
+  padding-left: 0;
 
   /* margin-right: auto;
   margin-left: auto; */
+}
+.menu-portfolio {
+  padding-bottom: 34px;
+}
+.portfolio-list-item {
+  width: 370px;
+  margin-bottom: 30px;
 }
 .portfolio-list-title {
   font-weight: bold;
@@ -411,6 +423,9 @@ a.logo.link {
   letter-spacing: 0.06em;
   color: var(--main-text-color);
   background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
 }
 .portfolio-list-text {
   font-size: 16px;
@@ -419,17 +434,33 @@ a.logo.link {
   color: var(--text-color);
   background-color: #ffffff;
 }
+.portfolio-list-container {
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  padding: 20px 24px;
+}
 .portfolio-list {
+  width: 1170px;
   display: flex;
   flex-wrap: wrap;
 }
-.portfolio-list-item {
-  padding: 30px;
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
-  background-color: white;
-}
-.portfolio-list:not(:nth-child(3n)) {
+.portfolio-list-item:not(:nth-child(3n)) {
   margin-right: 30px;
+  background-color: white;
+  pading: 0;
+}
+.portfolio-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 94px;
+}
+.menu-portfolio-title,
+.description-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
