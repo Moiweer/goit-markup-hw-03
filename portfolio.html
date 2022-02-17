@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
+    <title>Студия</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,178 +23,194 @@
 
   <body>
     <!-- HEADER and Navigation-->
-    <header class="header">
-      <nav class="navigation">
-        <a href="./index.html" lang="en" class="logo"
-          ><span class="logo-accent">Web</span
-          ><span class="logo-black-color">Studio</span></a
-        >
-        <ul class="navigation-list list">
-          <li class="navigation-list-item">
-            <a href="./index.html" class="navigation-link link">Студия</a>
-          </li>
-          <li class="navigation-list-item">
-            <a href="./portfolio.html" class="navigation-link link active"
-              >Портфолио</a
+    <header class="header container">
+      <div class="header-container">
+        <nav class="navigation">
+          <a href="./index.html" lang="en" class="logo"
+            ><span class="logo-accent">Web</span
+            ><span class="logo-black-color">Studio</span></a
+          >
+          <ul class="navigation-list list">
+            <li class="navigation-list-item">
+              <a href="./index.html" class="navigation-link link active"
+                >Студия</a
+              >
+            </li>
+            <li class="navigation-list-item">
+              <a href="./portfolio.html" class="navigation-link link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation-list-item">
+              <a href="/" class="navigation-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-list list">
+          <li class="contact-mail">
+            <a href="mailto:info@devstudio.com" class="contact-mail-link link"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="navigation-list-item">
-            <a href="#" class="navigation-link link">Контакты</a>
+          <li class="contact-telephon">
+            <a href="tel:+380961111111" class="contact-telephon-link link"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="contacts list">
-        <li class="contact-mail">
-          <a href="mailto:info@devstudio.com" class="contact-mail-link link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contact-telephon">
-          <a href="tel:+380961111111" class="contact-telephon-link link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- Section filter-portfolio -->
       <section class="menu-portfolio">
-        <h1 class="menu-portfolio-title">Портфолио</h1>
-        <ul class="portfolio-filter-list list">
-          <li class="portfolio-list-btn">
-            <button type="button" class="filter-btn">Все</button>
-          </li>
-          <li class="portfolio-list-btn">
-            <button type="button" class="filter-btn">Веб-сайты</button>
-          </li>
-          <li class="portfolio-list-btn">
-            <button type="button" class="filter-btn">Приложения</button>
-          </li>
-          <li class="portfolio-list-btn">
-            <button type="button" class="filter-btn">Дизайн</button>
-          </li>
-          <li class="portfolio-list-btn">
-            <button type="button" class="filter-btn">Маркетинг</button>
-          </li>
-        </ul>
-        <!-- Portfolio-list-img -->
-        <ul class="portfolio-list list">
-          <li class="portfolio-list-item">
-            <img
-              src="./images/project1.jpg"
-              width="370"
-              height="404"
-              alt="Пример веб-сайта"
-              class="portfolio-list-item-img"
-            />
-            <h2 class="portfolio-list-title">Технокряк</h2>
-            <p class="portfolio-list-text">Веб-сайт</p>
-          </li>
-          <li class="portfolio-list-item">
-            <img
-              src="./images/project2.jpg"
-              width="370"
-              height="404"
-              alt="Пример постера"
-              class="portfolio-list-item-img"
-            />
-            <h2 class="portfolio-list-title">
-              Постер <span lang="en">New Orlean vs Golden Star</span>
-            </h2>
-            <p class="portfolio-list-text">Дизайн</p>
-          </li>
-          <li class="portfolio-list-item">
-            <img
-              src="./images/project3.jpg"
-              width="370"
-              height="404"
-              alt="Логотип приложения"
-              class="portfolio-list-item-img"
-            />
-            <h2 class="portfolio-list-title">
-              Ресторан <span lang="en">Seafood</span>
-            </h2>
-            <p class="portfolio-list-text">Приложение</p>
-          </li>
-          <li class="portfolio-list-item">
-            <img
-              src="./images/project4.jpg"
-              width="370"
-              height="404"
-              alt="Наушники"
-              class="portfolio-list-item-img"
-            />
-            <h2 class="portfolio-list-title">
-              Проект <span lang="en">Prime</span>
-            </h2>
-            <p class="portfolio-list-text">Маркетинг</p>
-          </li>
-          <li class="portfolio-list-item">
-            <img
-              src="./images/project5.jpg"
-              width="370"
-              height="404"
-              alt="Две коробки"
-              class="portfolio-list-item-img"
-            />
-            <h2 class="portfolio-list-title">
-              Проект <span lang="en">Boxes</span>
-            </h2>
-            <p>class="portfolio-list-text"Приложение</p>
-          </li>
-          <li class="portfolio-list-item">
-            <img
-              src="./images/project6.jpg"
-              width="370"
-              height="404"
-              alt="Изображение веб-сайта на мониторе"
-              class="portfolio-list-item-img"
-            />
-            <h2 class="portfolio-list-title">
-              <span lang="en">Inspiration has no Borders</span>
-            </h2>
-            <p class="portfolio-list-text">Веб-сайт</p>
-          </li>
-          <li class="portfolio-list-item">
-            <img
-              src="./images/project7.jpg"
-              width="370"
-              height="404"
-              alt="Журнал"
-              class="portfolio-list-item-img"
-            />
-            <h2 class="portfolio-list-title">
-              Издание <span lang="en">Limited Edition</span>
-            </h2>
-            <p class="portfolio-list-text">Дизайн</p>
-          </li>
-          <li class="portfolio-list-item">
-            <img
-              src="./images/project8.jpg"
-              width="370"
-              height="404"
-              alt="Этикетка"
-              class="portfolio-list-item-img"
-            />
-            <h2 class="portfolio-list-title">
-              Проект <span lang="en">LAB</span>
-            </h2>
-            <p class="portfolio-list-text">Маркетинг</p>
-          </li>
-          <li class="portfolio-list-item">
-            <img
-              src="./images/project9.jpg"
-              width="370"
-              height="404"
-              alt="Пример приложения на ноутбуке"
-              class="portfolio-list-item-img"
-            />
-            <h2 class="portfolio-list-title">
-              <span lang="en">Growing Business</span>
-            </h2>
-            <p class="portfolio-list-text">Приложение</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h1 class="menu-portfolio-title">Портфолио</h1>
+          <ul class="portfolio-filter-list list">
+            <li class="portfolio-list-btn">
+              <button type="button" class="filter-btn first-btn">Все</button>
+            </li>
+            <li class="portfolio-list-btn">
+              <button type="button" class="filter-btn second-btn">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="portfolio-list-btn">
+              <button type="button" class="filter-btn third-btn">
+                Приложения
+              </button>
+            </li>
+            <li class="portfolio-list-btn">
+              <button type="button" class="filter-btn forth-btn">Дизайн</button>
+            </li>
+            <li class="portfolio-list-btn">
+              <button type="button" class="filter-btn fifeth-btn">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Portfolio-list-img -->
+      <section>
+        <div class="container">
+          <ul class="portfolio-list list">
+            <li class="portfolio-list-item">
+              <img
+                src="./images/project1.jpg"
+                width="370"
+                height="404"
+                alt="Пример веб-сайта"
+                class="portfolio-list-item-img"
+              />
+              <h2 class="portfolio-list-title">Технокряк</h2>
+              <p class="portfolio-list-text">Веб-сайт</p>
+            </li>
+            <li class="portfolio-list-item">
+              <img
+                src="./images/project2.jpg"
+                width="370"
+                height="404"
+                alt="Пример постера"
+                class="portfolio-list-item-img"
+              />
+              <h2 class="portfolio-list-title">
+                Постер <span lang="en">New Orlean vs Golden Star</span>
+              </h2>
+              <p class="portfolio-list-text">Дизайн</p>
+            </li>
+            <li class="portfolio-list-item">
+              <img
+                src="./images/project3.jpg"
+                width="370"
+                height="404"
+                alt="Логотип приложения"
+                class="portfolio-list-item-img"
+              />
+              <h2 class="portfolio-list-title">
+                Ресторан <span lang="en">Seafood</span>
+              </h2>
+              <p class="portfolio-list-text">Приложение</p>
+            </li>
+            <li class="portfolio-list-item">
+              <img
+                src="./images/project4.jpg"
+                width="370"
+                height="404"
+                alt="Наушники"
+                class="portfolio-list-item-img"
+              />
+              <h2 class="portfolio-list-title">
+                Проект <span lang="en">Prime</span>
+              </h2>
+              <p class="portfolio-list-text">Маркетинг</p>
+            </li>
+            <li class="portfolio-list-item">
+              <img
+                src="./images/project5.jpg"
+                width="370"
+                height="404"
+                alt="Две коробки"
+                class="portfolio-list-item-img"
+              />
+              <h2 class="portfolio-list-title">
+                Проект <span lang="en">Boxes</span>
+              </h2>
+              <p class="portfolio-list-text"Приложение</p>
+            </li>
+            <li class="portfolio-list-item">
+              <img
+                src="./images/project6.jpg"
+                width="370"
+                height="404"
+                alt="Изображение веб-сайта на мониторе"
+                class="portfolio-list-item-img"
+              />
+              <h2 class="portfolio-list-title">
+                <span lang="en">Inspiration has no Borders</span>
+              </h2>
+              <p class="portfolio-list-text">Веб-сайт</p>
+            </li>
+            <li class="portfolio-list-item">
+              <img
+                src="./images/project7.jpg"
+                width="370"
+                height="404"
+                alt="Журнал"
+                class="portfolio-list-item-img"
+              />
+              <h2 class="portfolio-list-title">
+                Издание <span lang="en">Limited Edition</span>
+              </h2>
+              <p class="portfolio-list-text">Дизайн</p>
+            </li>
+            <li class="portfolio-list-item">
+              <img
+                src="./images/project8.jpg"
+                width="370"
+                height="404"
+                alt="Этикетка"
+                class="portfolio-list-item-img"
+              />
+              <h2 class="portfolio-list-title">
+                Проект <span lang="en">LAB</span>
+              </h2>
+              <p class="portfolio-list-text">Маркетинг</p>
+            </li>
+            <li class="portfolio-list-item">
+              <img
+                src="./images/project9.jpg"
+                width="370"
+                height="404"
+                alt="Пример приложения на ноутбуке"
+                class="portfolio-list-item-img"
+              />
+              <h2 class="portfolio-list-title">
+                <span lang="en">Growing Business</span>
+              </h2>
+              <p class="portfolio-list-text">Приложение</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
