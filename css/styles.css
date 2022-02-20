@@ -253,6 +253,9 @@ img {
   margin-left: 30px;
   margin-top: 30px;
   background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-teatle {
@@ -328,6 +331,12 @@ a.logo.link {
   display: block;
 }
 .logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
 .logo-white-color {
@@ -374,11 +383,17 @@ a.logo.link {
   line-height: 1.6px;
 }
 .filter-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
   background-color: var(--button-bg-grey-color);
   border-color: var(--button-bg-grey-color);
   border-radius: 4px;
   border-width: 0;
   padding: 6px 22px;
+  cursor: pointer;
 }
 .portfolio-list-btn:not(:last-child) {
   margin-right: 8px;
@@ -391,8 +406,11 @@ a.logo.link {
 }
 
 .portfolio-filter-list {
-  width: 612px;
   display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
 }
 
 .portfolio-list-btn {
@@ -404,7 +422,8 @@ a.logo.link {
   padding-left: 0;
 }
 .menu-portfolio {
-  padding-bottom: 34px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .portfolio-list-item {
   width: 370px;
